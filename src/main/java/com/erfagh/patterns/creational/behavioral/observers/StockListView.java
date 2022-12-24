@@ -1,25 +1,16 @@
 package com.erfagh.patterns.creational.behavioral.observers;
 
-import java.util.ArrayList;
-import java.util.List;
+public class StockListView implements EventListener {
 
-public class StockListView implements Observer{
-    private final List<Stock> stocks = new ArrayList<>();
+    private final Stock stock;
 
-    public void initializeStocks(Stock stock) {
-        stocks.add(stock);
+    public StockListView(Stock stock) {
+        this.stock = stock;
     }
 
-    public void showListOfStock() {
-        stocks.forEach(System.out::println);
-    }
-
-    public List<Stock> getStocks() {
-        return stocks;
-    }
 
     @Override
-    public void update(int price) {
-
+    public void update() {
+        System.out.println(stock.getPrice());
     }
 }

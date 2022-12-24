@@ -1,4 +1,4 @@
-package com.erfagh.patterns;
+package com.erfagh.patterns.creational.abstractfactory;
 
 import com.erfagh.patterns.creational.abstractfactory.Application;
 import com.erfagh.patterns.creational.abstractfactory.GUIFactory;

@@ -1,6 +1,6 @@
 package com.erfagh.patterns.creational.behavioral.observers;
 
-public class Stock {
+public class Stock extends Subject{
     private String name;
     private int price;
     private boolean isPopular;
@@ -25,6 +25,7 @@ public class Stock {
 
     public void setPrice(int price) {
         this.price = price;
+        notifyObserver();
     }
 
     public boolean isPopular() {

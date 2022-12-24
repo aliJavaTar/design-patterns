@@ -4,19 +4,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Subject {
-    private final List<Observer> observers = new ArrayList<>();
+    private final List<EventListener> observers = new ArrayList<>();
 
-    public void addToObserver(Observer observer) {
+    public void addToObserver(EventListener observer) {
         observers.add(observer);
     }
 
-    public void removeToObserver(Observer observer) {
+    public void removeToObserver(EventListener observer) {
         observers.remove(observer);
     }
 
-    public void notify(int price) {
+    public void notifyObserver() {
         for (var o : observers) {
-            o.update(price);
+            o.update();
         }
     }
 }
