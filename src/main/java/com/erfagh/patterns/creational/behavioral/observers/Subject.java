@@ -15,8 +15,6 @@ public class Subject {
     }
 
     public void notifyObserver() {
-        for (var o : observers) {
-            o.update();
-        }
+        observers.forEach(EventListener::update);
     }
 }
