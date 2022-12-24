@@ -1,4 +1,4 @@
-package com.erfagh.patterns.creational.behavioral.observers;
+package com.erfagh.patterns.behavioral.observers;
 
 public class Stock extends Subject{
     private String name;

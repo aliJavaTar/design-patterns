@@ -1,4 +1,4 @@
-package com.erfagh.patterns.creational.behavioral.observers;
+package com.erfagh.patterns.behavioral.observers;
 
 import java.util.ArrayList;
 import java.util.List;

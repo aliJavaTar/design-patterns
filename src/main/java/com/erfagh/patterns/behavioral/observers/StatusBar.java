@@ -1,7 +1,6 @@
-package com.erfagh.patterns.creational.behavioral.observers;
+package com.erfagh.patterns.behavioral.observers;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class StatusBar implements EventListener {
 

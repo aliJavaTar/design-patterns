@@ -1,4 +1,4 @@
-package com.erfagh.patterns.creational.behavioral.observers;
+package com.erfagh.patterns.behavioral.observers;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,6 +17,7 @@ public class App {
 
         StockListView stockListView = new StockListView(stockList);
         StatusBar statusBar = new StatusBar(stockList);
+
 
 
         stock.addToObserver(statusBar);
