@@ -6,7 +6,7 @@ import java.util.List;
 public class App {
     public static void main(String[] args) {
 
-        Stock stock = new Stock("f", 100, true);
+//        Stock stock = new Stock("f", 100, true);
 
         List<Stock> stockList =new ArrayList<>();
         stockList.add(new Stock("a", 100, true));
@@ -18,12 +18,17 @@ public class App {
         StockListView stockListView = new StockListView(stockList);
         StatusBar statusBar = new StatusBar(stockList);
 
-
-
+        Stock stock = stockList.get(2);
         stock.addToObserver(statusBar);
         stock.addToObserver(stockListView);
-
         stock.setPrice(3);
+
+
+
+//        Stock stock1 = stockList.get(2);
+//        stock1.setPrice(3);
+
+//        stock.setPrice(3);
 
     }
 }
