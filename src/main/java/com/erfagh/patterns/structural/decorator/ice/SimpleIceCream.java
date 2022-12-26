@@ -4,6 +4,6 @@ public class SimpleIceCream implements IceCream {
 
     @Override
     public String makeIceCream() {
-        return "simple ice cream";
+        return " simple ice cream ";
     }
 }

@@ -12,6 +12,6 @@ public class ChocolateDecorator extends IceCreamDecorator {
     }
 
     private String addChocolate() {
-        return "add Chocolate";
+        return " add Chocolate ";
     }
 }
