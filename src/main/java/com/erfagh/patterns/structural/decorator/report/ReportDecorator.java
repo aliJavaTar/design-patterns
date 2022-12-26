@@ -8,5 +8,8 @@ public abstract class ReportDecorator implements ReportGenerator{
         this.reportGenerator = reportGenerator;
     }
 
-
+    @Override
+    public String generate() {
+        return reportGenerator.generate();
+    }
 }
