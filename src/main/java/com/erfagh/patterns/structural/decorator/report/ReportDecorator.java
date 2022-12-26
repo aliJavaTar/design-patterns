@@ -1,15 +1,12 @@
 package com.erfagh.patterns.structural.decorator.report;
 
-public abstract class ReportDecorator implements ReportGenerator{
+public abstract class ReportDecorator implements ReportGenerator {
 
-   private final ReportGenerator reportGenerator;
+    protected final ReportGenerator reportGenerator;
 
     protected ReportDecorator(ReportGenerator reportGenerator) {
         this.reportGenerator = reportGenerator;
     }
 
-    @Override
-    public String generate() {
-        return reportGenerator.generate();
-    }
+
 }
