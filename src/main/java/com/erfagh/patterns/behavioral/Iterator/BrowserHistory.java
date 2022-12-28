@@ -16,6 +16,10 @@ public class BrowserHistory {
         urls.remove(lastUrl);
         return lastUrl;
     }
+    public Iterator createIterator()
+    {
+        return new ListIterator(this);
+    }
 
     public class ListIterator implements Iterator {
         private BrowserHistory history;
@@ -32,12 +36,12 @@ public class BrowserHistory {
 
         @Override
         public String current() {
-            return null;
+            return history.urls.get(index);
         }
 
         @Override
         public void next() {
-
+            index++;
         }
     }
 
