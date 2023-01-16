@@ -4,5 +4,6 @@ public enum PresentationFormat {
 
     IMAGE,
     PDF,
-    MOVE, POWERPOINT
+    MOVE,
+    POWERPOINT
 }
