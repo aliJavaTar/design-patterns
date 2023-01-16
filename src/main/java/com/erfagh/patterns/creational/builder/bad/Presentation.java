@@ -14,12 +14,12 @@ public class Presentation {
         if (format == PresentationFormat.PDF) {
             PdfDocument pdfDocument = new PdfDocument();
             for (Slide s : slides) {
-                pdfDocument.addPage(s.test());
+                pdfDocument.addPage(s.text());
             }
         } else if (format == PresentationFormat.MOVE) {
             Movie movie = new Movie();
             for (Slide s : slides) {
-                movie.addFrame(s.test(), 2);
+                movie.addFrame(s.text(), 2);
             }
         }
     }

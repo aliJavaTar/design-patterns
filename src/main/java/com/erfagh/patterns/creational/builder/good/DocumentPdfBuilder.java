@@ -13,6 +13,11 @@ public class DocumentPdfBuilder implements PresentationBuilder {
 
     @Override
     public void addSlide(Slide slide) {
-     document.addPage(slide.text());
+        document.addPage(slide.text());
+    }
+
+    public PdfDocument getPdfDocument() {
+
+        return document;
     }
 }
