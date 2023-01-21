@@ -1,7 +1,7 @@
-package com.erfagh.patterns.creational.builder.good;
+package com.erfagh.patterns.creational.builder.good.bu;
 
-import com.erfagh.patterns.creational.builder.bad.PdfDocument;
-import com.erfagh.patterns.creational.builder.bad.Slide;
+import com.erfagh.patterns.creational.builder.bad.bu.PdfDocument;
+import com.erfagh.patterns.creational.builder.bad.bu.Slide;
 
 public class DocumentPdfBuilder implements PresentationBuilder {
 

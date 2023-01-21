@@ -1,4 +1,4 @@
-package com.erfagh.patterns.creational.builder.bad;
+package com.erfagh.patterns.creational.builder.bad.bu;
 
 public class Movie {
     public void addFrame(String text,int duration)

@@ -1,9 +1,6 @@
-package com.erfagh.patterns.creational.builder.good;
+package com.erfagh.patterns.creational.builder.good.bu;
 
-import com.erfagh.patterns.creational.builder.bad.Movie;
-import com.erfagh.patterns.creational.builder.bad.PdfDocument;
-import com.erfagh.patterns.creational.builder.bad.PresentationFormat;
-import com.erfagh.patterns.creational.builder.bad.Slide;
+import com.erfagh.patterns.creational.builder.bad.bu.Slide;
 
 import java.util.ArrayList;
 import java.util.List;

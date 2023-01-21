@@ -1,4 +1,4 @@
-package com.erfagh.patterns.creational.builder.bad;
+package com.erfagh.patterns.creational.builder.bad.bu;
 
 import java.util.ArrayList;
 import java.util.List;
