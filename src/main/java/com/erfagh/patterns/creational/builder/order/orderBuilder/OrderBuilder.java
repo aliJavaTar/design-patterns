@@ -8,7 +8,7 @@ public class OrderBuilder {
     private DerivativelyAddress address;
     private OrderLine orderLine;
     private Status status;
-    private int totalPrice;
+    private  int totalPrice;
 
     private int finalPrice;
 
