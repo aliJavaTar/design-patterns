@@ -12,7 +12,7 @@ public class OrderBuilder {
 
     private int finalPrice;
 
-    private Order order;
+    private final Order order;
 
     public OrderBuilder(Order order) {
         this.order = order;
@@ -46,5 +46,31 @@ public class OrderBuilder {
     public OrderBuilder setFinalPrice(int finalPrice) {
         this.finalPrice = finalPrice;
         return this;
+    }
+
+    public Order build() {
+        if (customer != null)
+            order.setCustomer(this.customer);
+        else order.setCustomer(order.getCustomer());
+
+        if (address != null)
+            order.setAddress(this.address);
+        else order.setAddress(order.getAddress());
+
+        if (orderLine != null)
+            order.setOrderLine(this.orderLine);
+        else order.setOrderLine(order.getOrderLine());
+
+        if (status != null)
+            order.setStatus(this.status);
+        else order.setStatus(order.getStatus());
+
+        if (customer != null)
+            order.setCustomer(this.customer);
+        else order.setCustomer(order.getCustomer());
+
+
+        return new Order(order.getCustomer(),order.getAddress(),order.getOrderLine() ,
+                order.getStatus(),order.getTotalPrice(),order.getFinalPrice());
     }
 }
