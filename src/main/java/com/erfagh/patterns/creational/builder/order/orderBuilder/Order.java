@@ -10,7 +10,8 @@ public class Order {
     private  int totalPrice;
     private  int finalPrice;
 
-    public Order(Customer customer, DerivativelyAddress address, OrderLine orderLine, Status status, int totalPrice, int finalPrice) {
+    public Order(Customer customer, DerivativelyAddress address,
+                 OrderLine orderLine, Status status, int totalPrice, int finalPrice) {
         this.customer = customer;
         this.address = address;
         this.orderLine = orderLine;
