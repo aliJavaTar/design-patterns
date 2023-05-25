@@ -17,8 +17,12 @@ public class CalculateSalary {
         pay.put(EmployeeType.MANAGER, new PayAmountManager(salary, bonus));
     }
 
-    public PayAmount getMoney(EmployeeType type) {
-        return pay.get(type);
+    public int calculatePayAmount(EmployeeType type) {
+        PayAmount payAmount = pay.get(type);
+        if (payAmount != null) {
+            return payAmount.calculatePayAmount(type);
+        }
+        throw new IllegalArgumentException("Invalid EmployeeType");
     }
 
 }

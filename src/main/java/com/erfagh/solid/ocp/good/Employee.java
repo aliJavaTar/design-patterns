@@ -10,7 +10,7 @@ public class Employee {
     }
 
     public int payAmount(EmployeeType employeeType) {
-        return salary.getMoney(employeeType).calculatePayAmount(employeeType);
+        return salary.calculatePayAmount(employeeType);
     }
 
 }
